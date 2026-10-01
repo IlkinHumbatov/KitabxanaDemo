@@ -1,4 +1,4 @@
-package az.caspiantech.kitabxanademo.book.repository.impl;
+package az.caspiantech.kitabxanademo.book.repository;
 
 import az.caspiantech.kitabxanademo.book.model.BookPage;
 

@@ -2,7 +2,7 @@ package az.caspiantech.kitabxanademo.book.service.impl;
 
 import az.caspiantech.kitabxanademo.book.mapper.BookPageMapper;
 import az.caspiantech.kitabxanademo.book.model.BookPage;
-import az.caspiantech.kitabxanademo.book.repository.impl.BookPageRepository;
+import az.caspiantech.kitabxanademo.book.repository.BookPageRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
@@ -25,6 +25,11 @@ public class BookPageServiceImpl implements BookPageRepository {
         return bookPageRepository.findAllByBookId(bookId).stream()
                 .map(mapper::toResponse)
                 .toList();
+    }
+
+    @Override
+    public List<BookPage> findAllByBookId(Long bookId) {
+        return List.of();
     }
 
     @Override

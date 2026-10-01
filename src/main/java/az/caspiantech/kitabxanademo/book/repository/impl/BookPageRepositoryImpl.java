@@ -1,11 +1,21 @@
 package az.caspiantech.kitabxanademo.book.repository.impl;
 
 import az.caspiantech.kitabxanademo.book.model.BookPage;
+import az.caspiantech.kitabxanademo.book.repository.BookPageRepository;
+import lombok.RequiredArgsConstructor;
+import org.jooq.DSLContext;
+import org.jooq.Record;
+
 
 import java.util.List;
 import java.util.Optional;
 
+import static az.caspiantech.kitabxanademo.generated.tables.BookPages.BOOK_PAGES;
+@RequiredArgsConstructor
 public class BookPageRepositoryImpl implements BookPageRepository {
+
+    private final DSLContext dsl;
+
     @Override
     public List<BookPage> findAllByBookId(Long bookId) {
         return dsl.selectFrom(BOOK_PAGES)
