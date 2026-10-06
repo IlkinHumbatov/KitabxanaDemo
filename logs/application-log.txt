@@ -1,3 +1,104 @@
-2026-09-29 10:22:28 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=14h56m715ms198µs900ns).
-2026-09-29 13:42:44 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-2026-09-29 13:42:44 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-10-06 10:25:31 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=16h37m45s6ms251µs900ns).
+2026-10-06 10:26:23 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=51s786ms55µs).
+2026-10-06 12:07:44 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-10-06 12:07:44 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-10-06 12:17:29 [main] INFO  a.c.k.KitabxanaDemoApplication - Starting KitabxanaDemoApplication using Java 21.0.9 with PID 16720 (C:\Users\asus\OneDrive\Рабочий стол\PracticalsAndCode\Starting Workspaces\java8\Chapter 02\KitabxanaDemo\build\classes\java\main started by asus in C:\Users\asus\OneDrive\Рабочий стол\PracticalsAndCode\Starting Workspaces\java8\Chapter 02\KitabxanaDemo)
+2026-10-06 12:17:29 [main] DEBUG a.c.k.KitabxanaDemoApplication - Running with Spring Boot v3.3.4, Spring v6.1.13
+2026-10-06 12:17:29 [main] INFO  a.c.k.KitabxanaDemoApplication - No active profile set, falling back to 1 default profile: "default"
+2026-10-06 12:17:32 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-10-06 12:17:32 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-10-06 12:17:32 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.30]
+2026-10-06 12:17:32 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-10-06 12:17:32 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2786 ms
+2026-10-06 12:17:32 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-10-06 12:17:32 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5968800d
+2026-10-06 12:17:32 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-10-06 12:17:33 [main] INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:postgresql://localhost:5432/kitabxana (PostgreSQL 18.4)
+2026-10-06 12:17:33 [main] WARN  o.f.c.i.database.base.Database - Flyway upgrade recommended: PostgreSQL 18.4 is newer than this version of Flyway and support has not been tested. The latest supported version of PostgreSQL is 16.
+2026-10-06 12:17:33 [main] INFO  o.f.core.internal.command.DbValidate - Successfully validated 1 migration (execution time 00:00.060s)
+2026-10-06 12:17:33 [main] INFO  o.f.core.internal.command.DbMigrate - Current version of schema "public": 1
+2026-10-06 12:17:33 [main] INFO  o.f.core.internal.command.DbMigrate - Schema "public" is up to date. No migration necessary.
+2026-10-06 12:17:34 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2026-10-06 12:17:35 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-10-06 12:17:35 [main] INFO  a.c.k.KitabxanaDemoApplication - Started KitabxanaDemoApplication in 7.926 seconds (process running for 10.182)
+2026-10-06 12:31:51 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-10-06 12:31:51 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-10-06 12:31:51 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 119 ms
+2026-10-06 12:35:22 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-10-06 12:35:22 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-10-06 12:35:34 [main] INFO  a.c.k.KitabxanaDemoApplication - Starting KitabxanaDemoApplication using Java 21.0.9 with PID 20712 (C:\Users\asus\OneDrive\Рабочий стол\PracticalsAndCode\Starting Workspaces\java8\Chapter 02\KitabxanaDemo\build\classes\java\main started by asus in C:\Users\asus\OneDrive\Рабочий стол\PracticalsAndCode\Starting Workspaces\java8\Chapter 02\KitabxanaDemo)
+2026-10-06 12:35:34 [main] DEBUG a.c.k.KitabxanaDemoApplication - Running with Spring Boot v3.3.4, Spring v6.1.13
+2026-10-06 12:35:34 [main] INFO  a.c.k.KitabxanaDemoApplication - No active profile set, falling back to 1 default profile: "default"
+2026-10-06 12:35:37 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-10-06 12:35:37 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-10-06 12:35:37 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.30]
+2026-10-06 12:35:37 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-10-06 12:35:37 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2658 ms
+2026-10-06 12:35:38 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-10-06 12:35:38 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@22f02996
+2026-10-06 12:35:38 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-10-06 12:35:38 [main] INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:postgresql://localhost:5432/kitabxana (PostgreSQL 18.4)
+2026-10-06 12:35:38 [main] WARN  o.f.c.i.database.base.Database - Flyway upgrade recommended: PostgreSQL 18.4 is newer than this version of Flyway and support has not been tested. The latest supported version of PostgreSQL is 16.
+2026-10-06 12:35:38 [main] INFO  o.f.core.internal.command.DbValidate - Successfully validated 1 migration (execution time 00:00.046s)
+2026-10-06 12:35:38 [main] INFO  o.f.core.internal.command.DbMigrate - Current version of schema "public": 1
+2026-10-06 12:35:38 [main] INFO  o.f.core.internal.command.DbMigrate - Schema "public" is up to date. No migration necessary.
+2026-10-06 12:35:40 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2026-10-06 12:35:41 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-10-06 12:35:41 [main] INFO  a.c.k.KitabxanaDemoApplication - Started KitabxanaDemoApplication in 8.016 seconds (process running for 10.069)
+2026-10-06 12:35:45 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-10-06 12:35:45 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-10-06 12:35:45 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2026-10-06 12:36:01 [http-nio-8080-exec-9] INFO  o.s.api.AbstractOpenApiResource - Init duration for springdoc-openapi is: 646 ms
+2026-10-06 12:37:32 [http-nio-8080-exec-1] INFO  a.c.k.b.service.impl.BookServiceImpl - Kitab (səhifələrlə birgə) axtarılır: id=5
+2026-10-06 12:37:33 [http-nio-8080-exec-1] INFO  org.jooq.Constants - 
+                                      
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@  @@        @@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@        @@@@@@@@@@
+@@@@@@@@@@@@@@@@  @@  @@    @@@@@@@@@@
+@@@@@@@@@@  @@@@  @@  @@    @@@@@@@@@@
+@@@@@@@@@@        @@        @@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@        @@        @@@@@@@@@@
+@@@@@@@@@@    @@  @@  @@@@  @@@@@@@@@@
+@@@@@@@@@@    @@  @@  @@@@  @@@@@@@@@@
+@@@@@@@@@@        @@  @  @  @@@@@@@@@@
+@@@@@@@@@@        @@        @@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@  @@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  Thank you for using jOOQ 3.19.11 (Build date: 2024-08-13T06:15:09Z)
+                                      
+2026-10-06 12:37:33 [http-nio-8080-exec-1] INFO  org.jooq.Constants - 
+
+jOOQ tip of the day: If you're using the code generator, you can profit from jOOQ's very useful implicit join syntax: https://blog.jooq.org/type-safe-implicit-join-through-path-navigation-in-jooq-3-11/
+
+2026-10-06 12:37:33 [http-nio-8080-exec-1] DEBUG org.jooq.tools.LoggerListener - Executing query          : select "public"."book"."id", "public"."book"."title", "public"."book"."author", "public"."book"."isbn", "public"."book"."price", "public"."book"."published_at", "public"."book"."page_count", "public"."book"."created_at", "public"."book"."updated_at" from "public"."book" where "public"."book"."id" = ?
+2026-10-06 12:37:33 [http-nio-8080-exec-1] DEBUG org.jooq.tools.LoggerListener - -> with bind values      : select "public"."book"."id", "public"."book"."title", "public"."book"."author", "public"."book"."isbn", "public"."book"."price", "public"."book"."published_at", "public"."book"."page_count", "public"."book"."created_at", "public"."book"."updated_at" from "public"."book" where "public"."book"."id" = 5
+2026-10-06 12:37:33 [http-nio-8080-exec-1] INFO  o.j.i.D.logVersionSupport - Version                  : Database version is supported by dialect POSTGRES: 18.4
+2026-10-06 12:37:33 [http-nio-8080-exec-1] DEBUG org.jooq.tools.LoggerListener - Fetched result           : +----+---------+---------+----+-----+----------------+----------+--------------------------+--------------------------+
+2026-10-06 12:37:33 [http-nio-8080-exec-1] DEBUG org.jooq.tools.LoggerListener -                          : |  id|title    |author   |isbn|price|published_at    |page_count|created_at                |updated_at                |
+2026-10-06 12:37:33 [http-nio-8080-exec-1] DEBUG org.jooq.tools.LoggerListener -                          : +----+---------+---------+----+-----+----------------+----------+--------------------------+--------------------------+
+2026-10-06 12:37:33 [http-nio-8080-exec-1] DEBUG org.jooq.tools.LoggerListener -                          : |   5|Kitab Bir|Müəllif A|111 |15.50|2023-05-10T00:00|       200|2026-09-21T16:40:02.120477|2026-09-21T16:40:02.120477|
+2026-10-06 12:37:33 [http-nio-8080-exec-1] DEBUG org.jooq.tools.LoggerListener -                          : +----+---------+---------+----+-----+----------------+----------+--------------------------+--------------------------+
+2026-10-06 12:37:33 [http-nio-8080-exec-1] DEBUG org.jooq.tools.LoggerListener - Fetched row(s)           : 1
+2026-10-06 12:37:33 [http-nio-8080-exec-1] INFO  a.c.k.b.s.impl.BookPageServiceImpl - Kitabın bütün səhifələri gətirilir: bookId=5
+2026-10-06 12:37:33 [http-nio-8080-exec-1] DEBUG org.jooq.tools.LoggerListener - Executing query          : select "public"."book_pages"."id", "public"."book_pages"."book_id", "public"."book_pages"."page_number", "public"."book_pages"."content" from "public"."book_pages" where "public"."book_pages"."book_id" = ? order by "public"."book_pages"."page_number" asc
+2026-10-06 12:37:33 [http-nio-8080-exec-1] DEBUG org.jooq.tools.LoggerListener - -> with bind values      : select "public"."book_pages"."id", "public"."book_pages"."book_id", "public"."book_pages"."page_number", "public"."book_pages"."content" from "public"."book_pages" where "public"."book_pages"."book_id" = 5 order by "public"."book_pages"."page_number" asc
+2026-10-06 12:37:38 [http-nio-8080-exec-1] DEBUG org.jooq.tools.LoggerListener - Fetched result           : +----+-------+-----------+--------------------------+
+2026-10-06 12:37:38 [http-nio-8080-exec-1] DEBUG org.jooq.tools.LoggerListener -                          : |  id|book_id|page_number|content                   |
+2026-10-06 12:37:38 [http-nio-8080-exec-1] DEBUG org.jooq.tools.LoggerListener -                          : +----+-------+-----------+--------------------------+
+2026-10-06 12:37:38 [http-nio-8080-exec-1] DEBUG org.jooq.tools.LoggerListener -                          : |   1|      5|          1|Birinci səhifənin mətni...|
+2026-10-06 12:37:38 [http-nio-8080-exec-1] DEBUG org.jooq.tools.LoggerListener -                          : |   2|      5|          2|İkinci səhifənin mətni... |
+2026-10-06 12:37:38 [http-nio-8080-exec-1] DEBUG org.jooq.tools.LoggerListener -                          : +----+-------+-----------+--------------------------+
+2026-10-06 12:37:38 [http-nio-8080-exec-1] DEBUG org.jooq.tools.LoggerListener - Fetched row(s)           : 2
+2026-10-06 12:39:05 [http-nio-8080-exec-3] INFO  a.c.k.b.s.impl.BookPageServiceImpl - Səhifə axtarılır: bookId=5, pageNumber=1
+2026-10-06 12:39:05 [http-nio-8080-exec-3] DEBUG org.jooq.tools.LoggerListener - Executing query          : select "public"."book_pages"."id", "public"."book_pages"."book_id", "public"."book_pages"."page_number", "public"."book_pages"."content" from "public"."book_pages" where ("public"."book_pages"."book_id" = ? and "public"."book_pages"."page_number" = ?)
+2026-10-06 12:39:05 [http-nio-8080-exec-3] DEBUG org.jooq.tools.LoggerListener - -> with bind values      : select "public"."book_pages"."id", "public"."book_pages"."book_id", "public"."book_pages"."page_number", "public"."book_pages"."content" from "public"."book_pages" where ("public"."book_pages"."book_id" = 5 and "public"."book_pages"."page_number" = 1)
+2026-10-06 12:39:05 [http-nio-8080-exec-3] DEBUG org.jooq.tools.LoggerListener - Fetched result           : +----+-------+-----------+--------------------------+
+2026-10-06 12:39:05 [http-nio-8080-exec-3] DEBUG org.jooq.tools.LoggerListener -                          : |  id|book_id|page_number|content                   |
+2026-10-06 12:39:05 [http-nio-8080-exec-3] DEBUG org.jooq.tools.LoggerListener -                          : +----+-------+-----------+--------------------------+
+2026-10-06 12:39:05 [http-nio-8080-exec-3] DEBUG org.jooq.tools.LoggerListener -                          : |   1|      5|          1|Birinci səhifənin mətni...|
+2026-10-06 12:39:05 [http-nio-8080-exec-3] DEBUG org.jooq.tools.LoggerListener -                          : +----+-------+-----------+--------------------------+
+2026-10-06 12:39:05 [http-nio-8080-exec-3] DEBUG org.jooq.tools.LoggerListener - Fetched row(s)           : 1

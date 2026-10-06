@@ -2,7 +2,10 @@ package az.caspiantech.kitabxanademo.book.controller;
 
 import az.caspiantech.kitabxanademo.book.dto.request.BookCreateRequest;
 import az.caspiantech.kitabxanademo.book.dto.request.BookUpdateRequest;
+import az.caspiantech.kitabxanademo.book.dto.response.BookPageResponse;
 import az.caspiantech.kitabxanademo.book.dto.response.BookResponse;
+import az.caspiantech.kitabxanademo.book.dto.response.BookWithPagesResponse;
+import az.caspiantech.kitabxanademo.book.service.BookPageService;
 import az.caspiantech.kitabxanademo.book.service.BookService;
 import az.caspiantech.kitabxanademo.common.pagination.PageResponse;
 import jakarta.validation.Valid;
@@ -20,6 +23,7 @@ import java.util.List;
 public class BookController {
 
     private final BookService bookService;
+    private final BookPageService bookPageService;
 
     @PostMapping
     public ResponseEntity<BookResponse> create(@Valid @RequestBody BookCreateRequest request) {
@@ -75,4 +79,19 @@ public class BookController {
     ) {
         return ResponseEntity.ok(bookService.getByPriceRange(min, max));
     }
+
+    @GetMapping("/{id}/full")
+    public ResponseEntity<BookWithPagesResponse> getByIdWithPages(@PathVariable Long id) {
+        return ResponseEntity.ok(bookService.getByIdWithPages(id));
+    }
+
+    @GetMapping("/{bookId}/pages/{pageNumber}")
+    public ResponseEntity<BookPageResponse> getBookPage(
+            @PathVariable Long bookId,
+            @PathVariable int pageNumber) {
+        return ResponseEntity.ok(bookPageService.getByBookIdAndPageNumber(bookId, pageNumber));
+    }
+
+
+
 }

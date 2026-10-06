@@ -2,19 +2,25 @@ package az.caspiantech.kitabxanademo.book.repository.impl;
 
 import az.caspiantech.kitabxanademo.book.model.BookPage;
 import az.caspiantech.kitabxanademo.book.repository.BookPageRepository;
+import lombok.AccessLevel;
 import lombok.RequiredArgsConstructor;
+import lombok.experimental.FieldDefaults;
 import org.jooq.DSLContext;
 import org.jooq.Record;
+import org.springframework.stereotype.Repository;
 
 
 import java.util.List;
 import java.util.Optional;
 
 import static az.caspiantech.kitabxanademo.generated.tables.BookPages.BOOK_PAGES;
+
+@Repository
 @RequiredArgsConstructor
+@FieldDefaults(level = AccessLevel.PRIVATE, makeFinal = true)
 public class BookPageRepositoryImpl implements BookPageRepository {
 
-    private final DSLContext dsl;
+    DSLContext dsl;
 
     @Override
     public List<BookPage> findAllByBookId(Long bookId) {

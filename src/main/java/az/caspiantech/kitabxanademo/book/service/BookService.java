@@ -3,6 +3,7 @@ package az.caspiantech.kitabxanademo.book.service;
 import az.caspiantech.kitabxanademo.book.dto.request.BookCreateRequest;
 import az.caspiantech.kitabxanademo.book.dto.request.BookUpdateRequest;
 import az.caspiantech.kitabxanademo.book.dto.response.BookResponse;
+import az.caspiantech.kitabxanademo.book.dto.response.BookWithPagesResponse;
 import az.caspiantech.kitabxanademo.common.pagination.PageResponse;
 
 import java.math.BigDecimal;
@@ -26,4 +27,6 @@ public interface BookService {
     BookResponse getMinPriceBook();
 
     List<BookResponse> getByPriceRange(BigDecimal min, BigDecimal max);
+
+    BookWithPagesResponse getByIdWithPages(Long id);
 }

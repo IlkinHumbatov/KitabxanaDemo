@@ -4,9 +4,11 @@ package az.caspiantech.kitabxanademo.book.service.impl;
 import az.caspiantech.kitabxanademo.book.dto.request.BookCreateRequest;
 import az.caspiantech.kitabxanademo.book.dto.request.BookUpdateRequest;
 import az.caspiantech.kitabxanademo.book.dto.response.BookResponse;
+import az.caspiantech.kitabxanademo.book.dto.response.BookWithPagesResponse;
 import az.caspiantech.kitabxanademo.book.mapper.BookMapper;
 import az.caspiantech.kitabxanademo.book.model.Book;
 import az.caspiantech.kitabxanademo.book.repository.BookRepository;
+import az.caspiantech.kitabxanademo.book.service.BookPageService;
 import az.caspiantech.kitabxanademo.book.service.BookService;
 import az.caspiantech.kitabxanademo.common.exception.BookNotFoundException;
 import az.caspiantech.kitabxanademo.common.pagination.PageResponse;
@@ -25,6 +27,7 @@ public class BookServiceImpl implements BookService {
 
     private final BookRepository bookRepository;
     private final BookMapper mapper;
+    private final BookPageService bookPageService;
 
     @Override
     public BookResponse create(BookCreateRequest request) {
@@ -128,5 +131,23 @@ public class BookServiceImpl implements BookService {
                 .toList();
         log.info("Qiymət aralığında tapılan kitab sayı: {}", result.size());
         return result;
+    }
+
+    @Override
+    public BookWithPagesResponse getByIdWithPages(Long id) {
+        log.info("Kitab (səhifələrlə birgə) axtarılır: id={}", id);
+        Book book = bookRepository.findById(id)
+                .orElseThrow(() -> new BookNotFoundException(id));
+
+        return BookWithPagesResponse.builder()
+                .id(book.getId())
+                .title(book.getTitle())
+                .author(book.getAuthor())
+                .isbn(book.getIsbn())
+                .price(book.getPrice())
+                .pageCount(book.getPageCount())
+                .publishedAt(book.getPublishedAt())
+                .pages(bookPageService.getAllByBookId(id))
+                .build();
     }
 }
